@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container Styling */
+  #log-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  #container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  #login h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Styling */
+  .inputs .input {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .inputs .input input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .inputs .input input:focus {
+    outline: none;
+    border-color: #007BFF;
+  }
+  
+  /* Button Styling */
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  #log-but {
+    background-color: #007BFF;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  #log-but:hover {
+    background-color: #0056b3;
+  }
+  
+  #sign-up_but {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  #sign-up_but:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    #container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    #login h1 {
+      font-size: 1.5rem;
+    }
+  }
