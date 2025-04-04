@@ -11,7 +11,7 @@ function Login() {
     <div id="log-sign">
       <div id="container">
         <div id="login">
-          <h1> LOGIN </h1>
+          <h1> Login </h1>
         </div>
 
         <div className="inputs">
