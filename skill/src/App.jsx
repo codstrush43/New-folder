@@ -1,17 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { StrictMode } from 'react';
+import {createRoot} from 'react-dom/client'
+
 // import './App.css'
-import Login from './login/Login'
+
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+
+import Layout from './Layout';
+// import Header from './Components/Header/Header';
+import Home from './Components/Home/Home';
+import Courses from './Components/Courses/Courses';
+import Dashboard from './Components/Dashboard/Dashboard';
+import About from './Components/About/About';
+import Login from './Components/login/Login';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<Layout />}>
+      <Route path='' element={<Home />} />
+      <Route path='courses' element={<Courses/>} />
+      <Route path='dashboard' element={<Dashboard/>} />
+      <Route path='about' element={<About/>} />
+    </Route>
+  )
+)
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>,
+)
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <Login/>
+
     </>
   )
 }
 
 export default App
+
