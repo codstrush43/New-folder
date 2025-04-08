@@ -14,7 +14,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import About from './Components/About/About';
 import Login from './Components/login/Login';
 import Sign_in from './Components/Sign_in/Sign_in';
-import Technology from './Components/Courses/Technology.jsx';
+import Technology from './Components/Courses/Technology';
 // import Login from './Components/login/Login';
 
 const router = createBrowserRouter(
