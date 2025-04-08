@@ -1,183 +1,77 @@
-/* Reset and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Courses Section */
 .courses {
-    padding: 4rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section-header {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .section-header {
     text-align: center;
-    margin-bottom: 3rem;
-}
-
-.section-header h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .section-header h2 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.course-filters {
+    color: #333;
+  }
+  
+  .section-header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .course-filters {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
     justify-content: center;
-}
-
-.filter-btn {
-    padding: 0.5rem 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .course-filters img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border 0.3s ease;
+  }
+  
+  .course-filters img:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+  }
+  
+  .filter-btn {
+    background-color: #eee;
     border: none;
-    background: #f3f4f6;
-    border-radius: 0.375rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 25px;
     cursor: pointer;
-}
-
-.filter-btn.active {
-    background: #0040c1;
-    color: white;
-}
-
-.course-grid {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    transition: all 0.3s ease;
+  }
+  
+  .filter-btn:hover,
+  .filter-btn.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 2rem;
-}
-
-.course-card {
-    background: white;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.course-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.course-content {
-    padding: 1.5rem;
-}
-
-/* Course Details Modal */
-.course-details-content {
-    max-width: 800px;
-    margin: 2rem auto;
-    background: white;
-    border-radius: 0.5rem;
-    overflow: hidden;
-}
-
-.course-details-header {
-    position: relative;
-}
-
-.course-details-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.course-details-info {
-    padding: 2rem;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.course-details-info h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.course-category {
-    display: inline-block;
-    background: #0040c1;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
-
-.course-meta {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.course-details-body {
-    padding: 2rem;
-}
-
-.course-section {
-    margin-bottom: 2rem;
-}
-
-.course-section h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: #0040c1;
-}
-
-.syllabus-list {
-    list-style: none;
-    margin-left: 1rem;
-}
-
-.syllabus-list li {
-    position: relative;
-    padding: 0.5rem 0;
-    padding-left: 1.5rem;
-}
-
-.syllabus-list li::before {
-    content: '•';
-    color: #0040c1;
-    position: absolute;
-    left: 0;
-}
-
-.enroll-btn {
-    width: 100%;
-    margin-top: 2rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-content,
-    .about-content {
-        grid-template-columns: 1fr;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .stats {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .dashboard-stats {
-        grid-template-columns: 1fr;
-    }
-
-    .course-details-content {
-        margin: 0;
-        border-radius: 0;
-    }
-}
+    padding: 0 1rem;
+  }
+  
+  /* Placeholder styling for dynamically loaded cards */
+  .course-grid::before {
+    content: "Courses will appear here...";
+    display: block;
+    text-align: center;
+    color: #999;
+    font-size: 1.2rem;
+  }

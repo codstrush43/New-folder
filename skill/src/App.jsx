@@ -12,6 +12,8 @@ import Courses from './Components/Courses/Courses';
 import Dashboard from './Components/Dashboard/Dashboard';
 import About from './Components/About/About';
 import Login from './Components/login/Login';
+import Technology from './Components/Courses/Technology';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +22,9 @@ const router = createBrowserRouter(
       <Route path='courses' element={<Courses/>} />
       <Route path='dashboard' element={<Dashboard/>} />
       <Route path='about' element={<About/>} />
+      <Route path='courses' element={<Technology/>} />
+      
+      
     </Route>
   )
 )
