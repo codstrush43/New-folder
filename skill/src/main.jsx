@@ -14,6 +14,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import About from './Components/About/About';
 import Login from './Components/login/Login';
 import Sign_in from './Components/Sign_in/Sign_in';
+import Technology from './Components/Courses/Technology.jsx';
 // import Login from './Components/login/Login';
 
 const router = createBrowserRouter(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path='about' element={<About/>} />
       <Route path="/login" element={<Login />} />
       <Route path="/signin" element={<Sign_in />} />
+      <Route path='courses' element={<Technology/>} />
     </Route>
   )
 )
