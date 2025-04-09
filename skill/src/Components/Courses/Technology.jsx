@@ -1,10 +1,10 @@
 import React from 'react'
-import './tech.css'
+import './Technology.css'
 
 function Technology() {
   return (
       <>
-            <div className="course-details-content">
+        <div className="course-details-content">
             <div className="course-details-header">
                 <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1469&q=80" alt="#" className='webphoto'/>
                 <div className="course-details-info">
