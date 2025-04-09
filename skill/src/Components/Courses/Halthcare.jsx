@@ -1,7 +1,7 @@
 import React from "react";
-import "./Haltcare.css";
+import "./Halthcare.css";
 
-function Haltcare() {
+function Halthcare() {
     return (
         <>
         <div className="course-details-content">
@@ -45,4 +45,4 @@ function Haltcare() {
 
 }
 
-export default Haltcare;
+export default Halthcare;

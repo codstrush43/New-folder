@@ -15,6 +15,9 @@ import About from './Components/About/About';
 import Login from './Components/login/Login';
 import Sign_in from './Components/Sign_in/Sign_in';
 import Technology from './Components/Courses/Technology';
+import Halthcare from './Components/Courses/Halthcare.jsx';
+import Agriculture from './Components/Courses/Agriculture.jsx';
+
 // import Login from './Components/login/Login';
 
 const router = createBrowserRouter(
@@ -27,6 +30,8 @@ const router = createBrowserRouter(
       <Route path="/login" element={<Login />} />
       <Route path="/signin" element={<Sign_in />} />
       <Route path='technology' element={<Technology/>} />
+      <Route path='halthcare' element={<Halthcare/>} />
+      <Route path='agriculture' element={<Agriculture/>} />
     </Route>
   )
 )
